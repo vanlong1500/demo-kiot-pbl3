@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../f8-shop"
+		},
+		{
+			"path": "../../../W3_banh"
+		},
+		{
+			"path": "../../../bai mau"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "demo shope"
+	}
+}
