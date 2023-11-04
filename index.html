@@ -111,28 +111,30 @@
                                 </i>trợ giúp
                             </a> 
                         </li>
-                        <li class="navbar-item navbar-item--strong navbar-item--separate">
+                        <!--navbar-item--strong thêm open(flex) -->
+                        <li class="navbar-item navbar-item--strong  navbar-item--separate">
                             <button class="navbar-item__DK-DN js--navbar-item__DK btn ">
                                 đăng kí
                             </button>
                         </li>
-
-                        <li class="navbar-item navbar-item--strong">
+                       
+                        <li class="navbar-item navbar-item--strong ">
                             <button class="navbar-item__DK-DN js--navbar-item__DN btn ">
                                 đăng nhập
                             </button>
                                 
                         </li>
-                        <!-- <li class="navbar-item navbar-user">
+                        <!--  -->
+                        <li class="navbar-item navbar-user js--user--show ">
                             <img src="./assets/imgshope/anhlogin.png" alt="" class="navbar-user-img">
                             <span class="navbar-user-name"> Đặng Văn Long</span>
                             <ul class="navbar-user-menu">
                                 <li class="navbar-user-item"> <a href="">tài khoảng</a> </li>
                                 <li class="navbar-user-item"><a href=""> Địa chỉ</a> </li>
-                                <li class="navbar-user-item navbar-user-item--separate"><a href=""> Đăng xuất</a> </li>
+                                <li class="navbar-user-item navbar-user-item--separate"><a href="#"> Đăng xuất</a> </li>
 
                             </ul>
-                        </li> -->
+                        </li>
                     </ul>
                 </nav>
 
@@ -584,7 +586,7 @@
                     
                     <!-- form đk -->
                      <div class="auth-form js--auth-form__DangKi ">
-                        <div class="auth-form__container">
+                        <div class="auth-form__container" id="registerForm">
     
                             <div class="auth-form-header">
                                 <h3 class="auth-form__heading">Đăng ký</h3>
@@ -592,15 +594,15 @@
                                     <button class="btn btn-normal btn--primary js--switch-btn--showDK">Đăng nhập</button>
                                 </span>
                             </div>
-                            <div class="auth-form__form">
+                            <div class="auth-form__form" >
                                 <div class="auth-form__group">
-                                    <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                                    <input type="text" class="auth-form__input" id="Name__DangKi" placeholder="name">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                    <input type="password" class="auth-form__input" id="password_DangKi" placeholder="password">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="email" class="auth-form__input" placeholder="Nhập lại mật khẩu ">
+                                    <input type="password" class="auth-form__input" id="password_DangKi" placeholder="confirm password ">
                                 </div>
                             </div>
                             <div class="auth-form__aside">
@@ -612,7 +614,7 @@
                             </div>
                             <div class="auth-form__controls">
                                 <button class="btn btn-normal auth-form__control-back js--control-back__DK">TRỞ LẠI</button>
-                                <button class="btn btn--primary btn-normal  ">ĐĂNG KÍ</button>
+                                <button class="btn btn--primary btn-normal  " id="xemDangKi">ĐĂNG KÍ</button>
         
                             </div>
                         </div>
@@ -635,7 +637,7 @@
                     
                     <!-- form đăng nhập -->
                      <div class="auth-form js--auth-form__DangNhap">
-                        <div class="auth-form__container">
+                        <div class="auth-form__container " id="loginForm">
     
                             <div class="auth-form-header">
                                 <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -645,10 +647,10 @@
                             </div>
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
-                                    <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                                    <input type="text" class="auth-form__input" id="loginName" placeholder=" user name">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                    <input type="password" class="auth-form__input " id="loginPassword" placeholder="Mật khẩu của bạn">
                                 </div>
                             </div>
                             <div class="auth-form__aside">
@@ -660,7 +662,7 @@
                             </div>
                             <div class="auth-form__controls">
                                 <button class="btn btn-normal auth-form__control-back js--control-back__DN">TRỞ LẠI</button>
-                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                                <button class="btn btn--primary btn-normal " id="loginButton">ĐĂNG NHẬP</button>
         
                             </div>
                         </div>

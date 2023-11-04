@@ -55,6 +55,7 @@
 }
 .navbar-item--strong {
     font-weight: 400;
+    display: flex;
 }
 .navbar-item__DK-DN{
     width: 100%;
@@ -93,7 +94,7 @@
 
 /* da dang nhap */
 .navbar-user{
-    display: flex;
+    display: none;
     justify-items: center;
     position: relative;
 }

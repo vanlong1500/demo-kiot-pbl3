@@ -59,6 +59,15 @@ html {
     display: block ;
 
 }
+
+.navbar-item__DK-DN.close{
+    display: none;
+}
+
+.navbar-user.open{
+    display: flex;
+}
+
 .auth-form.open__form{
     display: block ;
 

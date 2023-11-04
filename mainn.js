@@ -97,6 +97,13 @@ function DkshowDN() {
 }
 
 tuDKshowDN.addEventListener('click', DkshowDN)
+// từ nút đăng kí sang  đăng nhập
+
+function name(params) {
+    
+}
+
+
 
 // DN sang DK
 const tuDNsangDk=document.querySelector('.js--switch-btn--showDN')
@@ -105,3 +112,45 @@ function DNshowDK() {
     registor.classList.add('open__form')
 }
 tuDNsangDk.addEventListener('click',DNshowDK)
+
+
+// thiết lập đăng kí
+const formDK=document.getElementById("registerForm");
+const buttonDK=document.getElementById("xemDangKi");
+
+buttonDK.addEventListener('click',function(){
+    const name=document.getElementById("Name__DangKi").value;
+    const password=document.getElementById("password_DangKi").value;
+    localStorage.setItem("name",name);
+    localStorage.setItem("password",password);
+    alert("đăng kí thành công")
+});
+
+// thiết lập đăng nhập
+const formDN=document.getElementById('loginForm');
+const buttonDN=document.getElementById('loginButton');
+
+const showHeaderDN_DK=document.querySelector('.js--user--show')
+
+
+buttonDN.addEventListener('click',function () {
+    const nameDangnhap=document.getElementById('loginName').value;
+    const passwordDangNhap=document.getElementById('loginPassword').value;
+
+    const layUserName=localStorage.getItem("name");
+    const layPassword=localStorage.getItem("password");
+    if(nameDangnhap===layUserName && passwordDangNhap===layPassword){
+        
+    z_index_header_2.classList.remove('z-index')
+
+    modal.classList.remove('open')
+    login.classList.remove('open__form')
+    
+    ItemDangKi.classList.add('close')
+    ItemDangNhap.classList.add('close')
+    showHeaderDN_DK.classList.add('open')
+    }
+    else{
+        alert("đăng nhập không thành công")
+    }
+})
